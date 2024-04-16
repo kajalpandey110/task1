@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: gray;">
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="photo.jpeg" height="120px" width="120px" class="logo"
+            style="border-radius:50%"alt="">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+            <div class="header-text">
+                <p>Fresher</p>
+                <h1>Hi,I'm <span>Kajal</span><br> Pandey From Lucknow</h1>
+            </div>
+    </div>
+</div> 
+<!------------about------------>    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="kajal.jpeg"/> 
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" align="left">About Me</h1>
+                <p>My name is Kajal pandey .I am from Lucknow Uttar pradesh.Personality embraces moods,attitudes and Opninion and is motors
+                    clearly expressed in interaction with other people. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul align="left">                        
+                        <li><span>HTML</span><br>Begining</li>
+                        <li><span>CSS5</span><br>Begining</li>
+                        <li><span>Javascript</span><br>Begining</li>
+                        <li><span>Python</span><br>Begining</li>  
+                        <li><span>C programming</span><br>Begining</li>
+                        <li><span>Bootstrap</span><br>Begining</li>                                                                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul align="left">
+                        <li><span>2023</span><br>Summer Training at Digipodium</li>
+                        <li><span>2023-24</span><br>Intern on python(Django) </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul align="left">
+                        <li><span>Pursuing</span><br>BCA From Lal bahdur shastri girls college of Management</li>
+                        <li><span>2021</span><br>Intermediate From Police Modern school</li>
+                        <li><span>2019</span><br>High school From Police Modern School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------projects---->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title" align="left">My project</h1>
+        <div class="project-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>🕸️Customer segmentation analysis</h2>
+                <p>Customer segmentation analysis involves categorizing a business's customer base into
+                    distinct groups based on shared characteristics such as demographics, behavior, or
+                    preferences. This strategic process helps businesses tailor their marketing efforts, product offerings, and customer experiences to better meet the specific needs of each
+                    segment, ultimately improving customer satisfaction and driving business growth.</p>
+                <a href="https://github.com/kajalpandey110/Minor-project">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-crop"></i> 
+                <h2>🕸️Personal Portfolio Website</h2>
+                <p>Digital space where individuals showcase<br>
+                    their works,skills,and accomplishment to <br>
+                    potential employers,clients,or anyone interested<br>
+                    in learning more about them.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                
+                <h1 class="sub-title" >Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>✉️pandeygolu619@gmail.com</p>
+                
+                <p>☎️6292846110</p>
+                <div class="social-icons">
+                    <p>📧Linkdln
+                    <a hraf="www.linkedin.com/in/kajal-pandey-8a8097262"></a>
+                    </p><br>
+                </div>
+                <a href="kajal pandey resume.pdf" class="btn btn2">Download RESUME</a>
+                </div>
+            
+                    <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br><br><br>
+                    <br>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+<!----------Github----->
+    <div id="github">
+        <div class="container">
+            
+                <h1 class="sub-title">Github</h1>
+                <p  class="btn btn2" ><a href="https://github.com/kajalpandey110">GitHub Repository</a></p>
+            
+        </div>
+    </div> 
+        <div class="copyright">
+        <p>Copyright © Shalini.Made with🩷 by Easy Tutorials</p>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    
+</body>
+</html>
